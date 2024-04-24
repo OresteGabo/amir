@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url('../assets/kigali_convention_center.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    flex: 1 0 auto;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+header img {
+    max-width: 180px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.col {
+    flex: 1 1 auto;
+    margin: 1em;
+    padding: 2em;
+    background-color: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+}
+
+h2, p {
+    margin-bottom: 1em;
+}
+
+#countdown {
+    font-size: 2rem;
+}
+
+.registration-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #ef4d56;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        margin: 0;
+        padding: 1em;
+    }
+}
+
+footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 0.5em;
+}
+
+footer .social-icons img {
+    max-width: 24px;
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ef4d56;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.map-btn:hover {
+    background-color: #c0392b;
+}
